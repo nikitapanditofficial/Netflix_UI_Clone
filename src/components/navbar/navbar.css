@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.netflix_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13vw;
+    background-color: black;
+}
+
+.netflix_navbar-logo img {
+    height: auto;
+    width: 160px;
+}
+
+.netflix_navbar-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.netflix_navbar-button-lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(89, 89, 89);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.netflix_navbar-button-lang h6 {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.netflix_navbar-button-signin h6 {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.netflix_navbar-button-signin {
+    height: 32px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .netflix_navbar {
+        padding: 10px 5vw;
+    }
+
+    .netflix_navbar-logo img {
+        width: 120px;
+    }
+
+    .netflix_navbar-button-lang {
+        width: auto;
+        padding: 0 5px;
+    }
+
+    .netflix_navbar-button-lang h6 {
+        font-size: 12px;
+    }
+
+    .netflix_navbar-button-signin {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .netflix_navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .netflix_navbar-logo img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .netflix_navbar-button {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .netflix_navbar-button-lang {
+        width: auto;
+        padding: 0 5px;
+    }
+
+    .netflix_navbar-button-lang h6 {
+        font-size: 12px;
+    }
+
+    .netflix_navbar-button-signin {
+        width: 70px;
+    }
+}
